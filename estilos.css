@@ -119,3 +119,22 @@ select > option{
 .claseNuevoDivMatches {
     background-color: white;
 }
+
+.hidden {
+    display: none;
+}
+
+#loginSystem {
+    margin-top: 50px;
+   text-align: center;
+}
+
+#loginSystem input {
+    width: 300px;
+}
+
+#btnLoginSystem {
+    margin-top: 10px;
+    border: solid 4px white;
+    padding: 15px;
+}

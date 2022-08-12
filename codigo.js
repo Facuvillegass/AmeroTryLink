@@ -6,8 +6,27 @@
     let contenedorSolics = document.getElementById("contenedorSolics")
     let btnVerSolicitudes = document.getElementById("btnVerSolicitudes")
     let contenedorVerMatches = document.getElementById("divMatches")
+    let todoElPrograma = document.getElementById("todoElPrograma")
+    let inputUsuario = document.getElementById("inputUsuarioCodigo")
+    let btnLoginSystem = document.getElementById("btnLoginSystem")
+    let loginSystem = document.getElementById("loginSystem")
+
+
+
+    let usuariosHabilitados = ["Arbide","Conte","Garcia","Ferrari","Nuñez"]
+
+    btnLoginSystem.addEventListener("click", ()=> {
+        if (usuariosHabilitados.includes(inputUsuario.value)){
+            todoElPrograma.classList.remove("hidden")
+        }
+        inputUsuario.value = ""
+        loginSystem.classList.add("hidden")
+
+    })
 
     
+
+
     formJugadores.addEventListener("submit", async function (evento)
     {
         evento.preventDefault();
